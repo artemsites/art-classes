@@ -1,9 +1,47 @@
-.df {
+.d-f {
   display: flex;
 }
-.dif {
+
+.d-if {
   display: inline-flex;
 }
-.db {
+
+.d-b {
   display: block;
+}
+
+.d-n {
+  display: none;
+}
+
+.d-n-i {
+  display: none!important;
+}
+
+.md {
+  @media screen and (min-width: $md) {
+    &_d-n {
+      display: none;
+    }
+    &_d-if {
+      display: inline-flex;
+    }
+    &_d-f {
+      display: flex;
+    }
+  }
+}
+
+.lg {
+  @media screen and (min-width: $lg) {
+    &_d-n {
+      display: none;
+    }
+    &_d-if {
+      display: inline-flex;
+    }
+    &_d-f {
+      display: flex;
+    }
+  }
 }

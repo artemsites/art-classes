@@ -1,25 +1,14 @@
 // Вдохновение https://tailwindcss.com/docs/
 // v 0.4 - 2.05.2023
-// Config:
-$xs: 320px; // min-width: 320px; etc...
-$sm: 480px;
-$md: 576px;
-$lg: 768px;
-$xl: 992px;
-$xxl: 1200px;
-// $xxl: 1280px;
-$xxxl: 1440px;
-// $xxxl: 1536px;
-// $xxxl: 1600px;
-html {
-  // For rem:
-  // font-size: 16px;
-}
 
-@import 'sizes';
+
+
+@import 'base';
 @import 'display';
+@import 'width-height';
 @import 'flex';
 @import 'text-transform';
+@import 'text-align';
 @import 'margin';
 
 @for $i from -1 through 10 {
@@ -61,106 +50,6 @@ html {
 }
 
 
-// height
-.h40 {
-  height: 40%;
-}
-.h50 {
-  height: 50%;
-}
-.h60 {
-  height: 60%;
-}
-.h70 {
-  height: 70%;
-}
-.h100 {
-  height: 100%;
-}
-
-// width
-.w40 {
-  width: 40%;
-}
-.w50 {
-  width: 50%;
-}
-.w60 {
-  width: 60%;
-}
-.w100 {
-  width: 100%;
-}
-
-// max-width
-.maxwu {
-  max-width: unset;
-}
-
-// min-width
-.minwu {
-  min-width: unset;
-}
-
-.md {
-  @media screen and (min-width: $md) {
-    &-wa {
-      width: auto;
-    }
-    &-w50 {
-      width: 50%;
-    }
-    &-w40 {
-      width: 40%;
-    }
-  }
-}
-
-.lg {
-  @media screen and (min-width: $lg) {
-    &-wa {
-      width: auto;
-    }
-  }
-}
-
-.cb {
-  clear: both;
-}
-
-// text-align
-.tac {
-  text-align: center;
-}
-
-// TODO Надо функцией сделать на все классы добавлние -i (!important)
-.tac-i {
-  text-align: center!important;
-}
-
-.cd {
-  cursor: default;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -182,23 +71,6 @@ html {
 
 
 // Это на скорую руку писал в крыме
-.d-n {
-  display: none;
-  
-  &_md {
-    @media screen and (min-width: 992px) {
-      display: none;
-    }
-  }
-}
-
-.d-n-i {
-  display: none!important;
-}
-
-.w-100 {
-  width: 100%;
-}
 // .t-tx-50 {
 //   transform: translateX(-50%);
 // }
