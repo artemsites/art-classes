@@ -1,0 +1,97 @@
+.ma {
+  margin: auto;
+}
+
+.mla {
+  margin-left: auto;
+}
+
+.mra {
+  margin-right: auto;
+}
+
+.mlra {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.md-mlra {
+  @media screen and (min-width: $md) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+// rem
+@for $i from -1 through 10 {
+  .mt-#{$i+1} {
+    margin-top: $i+1rem;
+  }
+}
+@for $i from -1 through 10 {
+  .mt-#{$i+1}-5 {
+    margin-top: $i+1.5rem;
+  }
+}
+
+@for $i from -1 through 10 {
+  .mr-#{$i+1} {
+    margin-right: $i+1rem;
+  }
+}
+@for $i from -1 through 10 {
+  .mr-#{$i+1}-5 {
+    margin-right: $i+1.5rem;
+  }
+}
+
+@for $i from -1 through 10 {
+  .mb-#{$i+1} {
+    margin-bottom: $i+1rem;
+  }
+}
+@for $i from -1 through 10 {
+  .mb-#{$i+1}-5 {
+    margin-bottom: $i+1.5rem;
+  }
+}
+
+@for $i from -1 through 10 {
+  .ml-#{$i+1} {
+    margin-left: $i+1rem;
+  }
+}
+@for $i from -1 through 10 {
+  .ml-#{$i+1}-5 {
+    margin-left: $i+1.5rem;
+  }
+}
+
+
+
+// vw
+@for $i from -1 through 10 {
+  .mt-#{$i+1}vw {
+    margin-top: $i+1vw;
+  }
+}
+
+@for $i from -1 through 10 {
+  .mr-#{$i+1}vw {
+    margin-right: $i+1vw;
+  }
+}
+
+@for $i from -1 through 10 {
+  .mb-#{$i+1}vw {
+    margin-bottom: $i+1vw;
+  }
+}
+
+@for $i from -1 through 10 {
+  .ml-#{$i+1}vw {
+    margin-left: $i+1vw;
+  }
+}
