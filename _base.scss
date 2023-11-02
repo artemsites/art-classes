@@ -40,6 +40,15 @@ $size-9: calc($gr-9 * 1rem);
 
 $dark: #333333;
 $light: #fff;
+$primary: #0d6efd;
+$secondary: #ffe138;
+// or accent:
+$accent: #ffe138;
+
+$warning: #ffc107;
+$danger: #dc3545;
+$success: #198754;
+$info: #0dcaf0;
 
 $gray: color.scale($dark, $lightness: $gr-s);
 $gray-2: color.scale($gray, $lightness: $gr-s);
@@ -107,9 +116,18 @@ $m-c-w: $size-9;
 
   --dark: #333333;
   --light: #fff;
-  --accent: #3c73ff;
-  --accent-2: color-mix(in srgb, var(--accent) var(--gr-b), var(--light));
+  --primary: #0d6efd;
+  --secondary: #ffe138;
+  // or accent:
+  --accent: #ffe138;
 
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --success: #198754;
+  --info: #0dcaf0;
+
+
+  
   --gray: color-mix(in srgb, var(--dark) var(--gr-b), var(--light));
   --gray-2: color-mix(in srgb, var(--gray) var(--gr-b), var(--light));
   --gray-3: color-mix(in srgb, var(--gray-2) var(--gr-b), var(--light));
