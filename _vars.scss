@@ -1,50 +1,47 @@
 @use 'sass:color';
 
-
-
 $xs: 0;
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 
-
-
 $gr-s: 38.2%;
 $gr-b: 61.8%;
 
-
+$transition: 300ms;
 
 $gr--2: 0.382;
 $gr--1: 0.618;
-$gr-1: 1.618;//1.6180339887
-$gr-2: 2.618;//2.6180339885884316
-$gr-3: 4.236;//4.23606797710791
-$gr-6: 17.9442719;//17.944271906679102
-$gr-7: 29;//29.03444184748134
-$gr-9: 76;//76.01315559640044
+$gr-1: 1.618; //1.6180339887
+$gr-2: 2.618; //2.6180339885884316
+$gr-3: 4.236; //4.23606797710791
+$gr-4: 6.8541; //6.8541019654042525
+$gr-5: 11; //11.090169942039552
+$gr-6: 17.9442719; //17.944271906679102
+$gr-7: 29; //29.03444184748134
+$gr-9: 76; //76.01315559640044
 
-
-
+// rem
 $size--2: calc($gr--2 * 1rem);
 $size--1: calc($gr--1 * 1rem);
 $size: 1rem;
 $size-1: calc($gr-1 * 1rem);
 $size-2: calc($gr-2 * 1rem);
 $size-3: calc($gr-3 * 1rem);
+$size-4: calc($gr-4 * 1rem);
+$size-5: calc($gr-5 * 1rem);
 $size-6: calc($gr-6 * 1rem);
 $size-7: calc($gr-7 * 1rem);
 $size-9: calc($gr-9 * 1rem);
 
-
-
 $dark: #333333;
 $light: #fff;
 $primary: #0d6efd;
-$secondary: #ffe138;
-// or accent:
+// @todo надо везде сделать одинаковый выхлоп из нативной функции и scss
+$primary-2: color.scale($primary, $lightness: $gr-s);
+$secondary: #ffe138; // or accent:
 $accent: #ffe138;
-
 $warning: #ffc107;
 $danger: #dc3545;
 $success: #198754;
@@ -56,12 +53,7 @@ $gray-3: color.scale($gray-2, $lightness: $gr-s);
 $gray-4: color.scale($gray-3, $lightness: $gr-s);
 $gray-5: color.scale($gray-4, $lightness: $gr-s);
 
-
-
-// max container width
 $m-c-w: $size-9;
-
-
 
 :root {
   font-family: 'Roboto Flex Variable', sans-serif;
@@ -69,93 +61,77 @@ $m-c-w: $size-9;
   // font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 468, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 570, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
   font-size: 3.125vw;
 
-
-
   --xs: 0;
   --sm: 576px;
   --md: 768px;
   --lg: 992px;
   --xl: 1200px;
 
-
-
   --gr-s: 38.2%;
   --gr-b: 61.8%;
-
-
 
   --gr--2: 0.382;
   --gr--1: 0.618;
   --gr-0: 1;
-  --gr-1: 1.618;//1.6180339887
-  --gr-2: 2.618;//2.6180339885884316
-  --gr-3: 4.236;//4.23606797710791
-  --gr-4: 6.8541;//6.8541019654042525
-  --gr-5: 11;//11.090169942039552
-  --gr-6: 17.9442719;//17.944271906679102
-  --gr-7: 29;//29.03444184748134
-  --gr-9: 76;//76.01315559640044
+  --gr-1: 1.618; //1.6180339887
+  --gr-2: 2.618; //2.6180339885884316
+  --gr-3: 4.236; //4.23606797710791
+  --gr-4: 6.8541; //6.8541019654042525
+  --gr-5: 11; //11.090169942039552
+  --gr-6: 17.9442719; //17.944271906679102
+  --gr-7: 29; //29.03444184748134
+  --gr-9: 76; //76.01315559640044
 
-
-
-  // rem
   --size--2: calc(1rem * var(--gr--2));
   --size--1: calc(1rem * var(--gr--1));
   --size: 1rem;
-  --size-1: calc(var(--gr-1) * 1rem);//1.6180339887
-  --size-2: calc(var(--gr-2) * 1rem);//2.6180339885884316
-  --size-3: calc(var(--gr-3) * 1rem);//4.23606797710791
-  --size-4: calc(var(--gr-4) * 1rem);//6.8541019654042525
-  --size-5: calc(var(--gr-5) * 1rem);//11.090169942039552
-  --size-6: calc(var(--gr-6) * 1rem);//17.944271906679102
-  --size-7: calc(var(--gr-7) * 1rem);//29.03444184748134
-  --size-8: calc(var(--gr-8) * 1rem);//46.97871375215843
-  --size-9: calc(var(--gr-9) * 1rem);//76.01315559640044
-
-
+  --size-1: calc(var(--gr-1) * 1rem); //1.6180339887
+  --size-2: calc(var(--gr-2) * 1rem); //2.6180339885884316
+  --size-3: calc(var(--gr-3) * 1rem); //4.23606797710791
+  --size-4: calc(var(--gr-4) * 1rem); //6.8541019654042525
+  --size-5: calc(var(--gr-5) * 1rem); //11.090169942039552
+  --size-6: calc(var(--gr-6) * 1rem); //17.944271906679102
+  --size-7: calc(var(--gr-7) * 1rem); //29.03444184748134
+  --size-8: calc(var(--gr-8) * 1rem); //46.97871375215843
+  --size-9: calc(var(--gr-9) * 1rem); //76.01315559640044
 
   --dark: #333333;
   --light: #fff;
   --primary: #0d6efd;
-  --secondary: #ffe138;
-  // or accent:
+  --primary-2: color-mix(in srgb, var(--primary) var(--gr-b), var(--light));
+  --secondary: #ffe138; // or accent:
   --accent: #ffe138;
-
   --warning: #ffc107;
   --danger: #dc3545;
   --success: #198754;
   --info: #0dcaf0;
 
-
-  
   --gray: color-mix(in srgb, var(--dark) var(--gr-b), var(--light));
   --gray-2: color-mix(in srgb, var(--gray) var(--gr-b), var(--light));
   --gray-3: color-mix(in srgb, var(--gray-2) var(--gr-b), var(--light));
   --gray-4: color-mix(in srgb, var(--gray-3) var(--gr-b), var(--light));
   --gray-5: color-mix(in srgb, var(--gray-4) var(--gr-b), var(--light));
 
-
-
   // max container width
   --m-c-w: var(--size-9);
-
-
 
   @media screen and (min-width: 576px) {
     font-size: 18px;
   }
 
-
-
   // container padding
   --c-p: var(--size);
   // container width
   --c-w: calc(100vw - var(--size) * 2);
+
   @media screen and (min-width: 768px) {
     --c-p: var(--size-1);
     --c-w: calc(100vw - var(--size-1) * 2);
   }
-}
+
+}//:root
+
+
 
 body {
   display: flex;
