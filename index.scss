@@ -12,6 +12,7 @@
 @import 'text-transform';
 @import 'text-align';
 @import 'margin';
+@import 'border-radius';
 
 @for $i from -1 through 10 {
   .fs#{$i+1} {

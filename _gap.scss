@@ -4,6 +4,7 @@ $i: 0;
     .g-#{$i} {
         gap: #{$i}rem;
     }
+
     $i: $i + 1;
 }
 
@@ -26,7 +27,6 @@ $pref: 0;
 // gap: 0.25rem - 9.75rem
 $pref: 0;
 @while $pref < 10 {
-
     $post: 25;
     $val: $pref+0.25;
     @while $post <= 75 {
