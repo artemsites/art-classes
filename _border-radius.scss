@@ -1,0 +1,56 @@
+// gap: 0rem - 10rem
+$i: 0;
+@while $i <= 10 {
+    .br-#{$i} {
+        border-radius: #{$i}rem;
+        &_lg {
+            @media screen and (min-width: $lg) {
+                border-radius: #{$i}rem;
+            }
+        }
+    }
+    
+    $i: $i + 1;
+}
+
+
+
+// border-radius: 0.5rem - 9.5rem
+$pref: 0;
+@while $pref < 10 {
+    $post: 5;
+    $val: $pref+0.5;
+    .br-#{$pref}-#{$post} {
+        border-radius: #{$val}rem;
+        &_lg {
+            @media screen and (min-width: $lg) {
+                border-radius: #{$val}rem;
+            }
+        }
+    }
+
+    $pref: $pref + 1;
+}
+
+
+
+// border-radius: 0.25rem - 9.75rem
+$pref: 0;
+@while $pref < 10 {
+    $post: 25;
+    $val: $pref+0.25;
+    @while $post <= 75 {
+        .br-#{$pref}-#{$post} {
+            border-radius: #{$val}rem;
+            &_lg {
+                @media screen and (min-width: $lg) {
+                    border-radius: #{$val}rem;
+                }
+            }
+        }
+        $post: $post + 25;
+        $val: $val + 0.25;
+    }
+
+    $pref: $pref + 1;
+}
