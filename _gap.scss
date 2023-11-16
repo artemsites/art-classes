@@ -1,22 +1,47 @@
 // gap: 0rem - 10rem
-$i: 0;
-@while $i <= 10 {
-    .g-#{$i} {
-        gap: #{$i}rem;
+$val: 0;
+
+@while $val <= 10 {
+    .g-#{$val} {
+        gap: #{$val}rem;
+
+        &_lg {
+            @media screen and (min-width: $lg) {
+                gap: #{$val}rem;
+            }
+        }
+        &_to-lg {
+            @media screen and (max-width: $to-lg) {
+                gap: #{$val}rem;
+            }
+        }
     }
 
-    $i: $i + 1;
+    $val: $val + 1;
 }
 
 
 
 // gap: 0.5rem - 9.5rem
 $pref: 0;
+
 @while $pref < 10 {
     $post: 5;
     $val: $pref+0.5;
+
     .g-#{$pref}-#{$post} {
         gap: #{$val}rem;
+
+        &_lg {
+            @media screen and (min-width: $lg) {
+                gap: #{$val}rem;
+            }
+        }
+        &_to-lg {
+            @media screen and (max-width: $to-lg) {
+                gap: #{$val}rem;
+            }
+        }
     }
 
     $pref: $pref + 1;
@@ -26,13 +51,27 @@ $pref: 0;
 
 // gap: 0.25rem - 9.75rem
 $pref: 0;
+
 @while $pref < 10 {
     $post: 25;
     $val: $pref+0.25;
+
     @while $post <= 75 {
         .g-#{$pref}-#{$post} {
             gap: #{$val}rem;
+
+            &_lg {
+                @media screen and (min-width: $lg) {
+                    gap: #{$val}rem;
+                }
+            }
+            &_to-lg {
+                @media screen and (max-width: $to-lg) {
+                    gap: #{$val}rem;
+                }
+            }
         }
+
         $post: $post + 25;
         $val: $val + 0.25;
     }
