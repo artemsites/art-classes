@@ -57,7 +57,7 @@ $pref: 0;
 // margin-top: 0rem - 10rem
 $val: 0;
 @while $val <= 10 {
-    .mt-#{$val}_lg {
+    .mt-#{$val}-lg {
         @media screen and (min-width: $lg) {
             margin-top: #{$val}rem;
         }
@@ -74,7 +74,7 @@ $pref: 0;
     $post: 5;
     $val: $pref+0.5;
 
-    .mt-#{$pref}-#{$post}_lg {
+    .mt-#{$pref}-#{$post}-lg {
         @media screen and (min-width: $lg) {
             margin-top: #{$val}rem;
         }
@@ -92,7 +92,7 @@ $pref: 0;
     $val: $pref+0.25;
 
     @while $post <= 75 {
-        .mt-#{$pref}-#{$post}_lg {
+        .mt-#{$pref}-#{$post}-lg {
             @media screen and (min-width: $lg) {
                 margin-top: #{$val}rem;
             }

@@ -20,30 +20,30 @@
 
 @media screen and (min-width: $md) {
   .md_d-n,
-  .d-n_md {
+  .d-n-md {
     display: none;
   }
   .md_d-if,
-  .d-if_md {
+  .d-if-md {
     display: inline-flex;
   }
   .md_d-f,
-  .d-f_md {
+  .d-f-md {
     display: flex;
   }
 }
 
 @media screen and (min-width: $lg) {
   .lg_d-n,
-  .d-n_lg {
+  .d-n-lg {
     display: none;
   }
   .lg_d-if,
-  .d-if_lg {
+  .d-if-lg {
     display: inline-flex;
   }
   .lg_d-f,
-  .d-f_lg {
+  .d-f-lg {
     display: flex;
   }
 }

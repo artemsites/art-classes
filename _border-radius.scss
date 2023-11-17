@@ -3,7 +3,7 @@ $i: 0;
 @while $i <= 10 {
     .br-#{$i} {
         border-radius: #{$i}rem;
-        &_lg {
+        &-lg {
             @media screen and (min-width: $lg) {
                 border-radius: #{$i}rem;
             }
@@ -22,7 +22,7 @@ $pref: 0;
     $val: $pref+0.5;
     .br-#{$pref}-#{$post} {
         border-radius: #{$val}rem;
-        &_lg {
+        &-lg {
             @media screen and (min-width: $lg) {
                 border-radius: #{$val}rem;
             }
@@ -42,7 +42,7 @@ $pref: 0;
     @while $post <= 75 {
         .br-#{$pref}-#{$post} {
             border-radius: #{$val}rem;
-            &_lg {
+            &-lg {
                 @media screen and (min-width: $lg) {
                     border-radius: #{$val}rem;
                 }
