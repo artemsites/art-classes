@@ -26,18 +26,6 @@
 
 // rem
 @for $i from -1 through 10 {
-  .mt-#{$i+1} {
-    margin-top: $i+1rem;
-  }
-}
-
-@for $i from -1 through 10 {
-  .mt-#{$i+1}-5 {
-    margin-top: $i+1.5rem;
-  }
-}
-
-@for $i from -1 through 10 {
   .mr-#{$i+1} {
     margin-right: $i+1rem;
   }
@@ -77,13 +65,13 @@
       margin-top: $i+1rem;
     }
   }
-  
+
   @for $i from -1 through 10 {
     .md_mt-#{$i+1}-5 {
       margin-top: $i+1.5rem;
     }
   }
-  
+
   @for $i from -1 through 10 {
     .md_mr-#{$i+1} {
       margin-right: $i+1rem;
@@ -94,19 +82,19 @@
       margin-right: $i+1.5rem;
     }
   }
-  
+
   @for $i from -1 through 10 {
     .md_mb-#{$i+1} {
       margin-bottom: $i+1rem;
     }
   }
-  
+
   @for $i from -1 through 10 {
     .md_mb-#{$i+1}-5 {
       margin-bottom: $i+1.5rem;
     }
   }
-  
+
   @for $i from -1 through 10 {
     .md_ml-#{$i+1} {
       margin-left: $i+1rem;
@@ -125,13 +113,13 @@
       margin-top: $i+1rem;
     }
   }
-  
+
   @for $i from -1 through 10 {
     .lg_mt-#{$i+1}-5 {
       margin-top: $i+1.5rem;
     }
   }
-  
+
   @for $i from -1 through 10 {
     .lg_mr-#{$i+1} {
       margin-right: $i+1rem;
@@ -142,19 +130,19 @@
       margin-right: $i+1.5rem;
     }
   }
-  
+
   @for $i from -1 through 10 {
     .lg_mb-#{$i+1} {
       margin-bottom: $i+1rem;
     }
   }
-  
+
   @for $i from -1 through 10 {
     .lg_mb-#{$i+1}-5 {
       margin-bottom: $i+1.5rem;
     }
   }
-  
+
   @for $i from -1 through 10 {
     .lg_ml-#{$i+1} {
       margin-left: $i+1rem;

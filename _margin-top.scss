@@ -1,0 +1,110 @@
+// margin-top: 0rem - 10rem
+$val: 0;
+@while $val <= 10 {
+    .mt-#{$val} {
+        margin-top: #{$val}rem;
+    }
+
+    $val: $val + 1;
+}
+
+
+
+// margin-top: 0.5rem - 9.5rem
+$pref: 0;
+@while $pref < 10 {
+    $post: 5;
+    $val: $pref+0.5;
+
+    .mt-#{$pref}-#{$post} {
+        margin-top: #{$val}rem;
+    }
+
+    $pref: $pref + 1;
+}
+
+
+
+// margin-top: 0.25rem - 9.75rem
+$pref: 0;
+@while $pref < 10 {
+    $post: 25;
+    $val: $pref+0.25;
+
+    @while $post <= 75 {
+        .mt-#{$pref}-#{$post} {
+            margin-top: #{$val}rem;
+        }
+
+        $post: $post + 25;
+        $val: $val + 0.25;
+    }
+
+    $pref: $pref + 1;
+}
+
+
+
+// sm после чтобы перебивать предыдущий
+
+
+
+// md после чтобы перебивать предыдущий
+
+
+
+// lg после чтобы перебивать предыдущий
+// margin-top: 0rem - 10rem
+$val: 0;
+@while $val <= 10 {
+    .mt-#{$val}_lg {
+        @media screen and (min-width: $lg) {
+            margin-top: #{$val}rem;
+        }
+    }
+
+    $val: $val + 1;
+}
+
+
+
+// margin-top: 0.5rem - 9.5rem
+$pref: 0;
+@while $pref < 10 {
+    $post: 5;
+    $val: $pref+0.5;
+
+    .mt-#{$pref}-#{$post}_lg {
+        @media screen and (min-width: $lg) {
+            margin-top: #{$val}rem;
+        }
+    }
+
+    $pref: $pref + 1;
+}
+
+
+
+// margin-top: 0.25rem - 9.75rem
+$pref: 0;
+@while $pref < 10 {
+    $post: 25;
+    $val: $pref+0.25;
+
+    @while $post <= 75 {
+        .mt-#{$pref}-#{$post}_lg {
+            @media screen and (min-width: $lg) {
+                margin-top: #{$val}rem;
+            }
+        }
+
+        $post: $post + 25;
+        $val: $val + 0.25;
+    }
+
+    $pref: $pref + 1;
+}
+
+
+
+// xl после чтобы перебивать предыдущий
