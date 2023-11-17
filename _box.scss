@@ -1,0 +1,199 @@
+.box {
+    width: 100%;
+
+    display: flex;
+
+
+
+    &._row {
+        flex-direction: row;
+    }
+
+    &._col {
+        flex-direction: column;
+    }
+
+    &._row-sm {
+        @media screen and (min-width: $sm) {
+            flex-direction: row;
+        }
+    }
+
+    &._col-sm {
+        @media screen and (min-width: $sm) {
+            flex-direction: column;
+        }
+    }
+
+    &._row-md {
+        @media screen and (min-width: $md) {
+            flex-direction: row;
+        }
+    }
+
+    &._col-md {
+        @media screen and (min-width: $md) {
+            flex-direction: column;
+        }
+    }
+
+    &._row-lg {
+        @media screen and (min-width: $lg) {
+            flex-direction: row;
+        }
+    }
+
+    &._col-lg {
+        @media screen and (min-width: $lg) {
+            flex-direction: column;
+        }
+    }
+
+    &._row-xl {
+        @media screen and (min-width: $xl) {
+            flex-direction: row;
+        }
+    }
+
+    &._col-xl {
+        @media screen and (min-width: $xl) {
+            flex-direction: column;
+        }
+    }
+
+
+
+    &._between {
+        justify-content: space-between;
+    }
+
+    &._wrap {
+        flex-wrap: wrap;
+    }
+
+    &._start {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+
+
+    &__aside {
+        width: 100%;
+        // width: 90%;
+
+        display: inline-flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 992px) {
+            min-width: 19.5rem;
+            max-width: var(--w-aside);
+        }
+
+        // &._zi-5 {
+        //   z-index: 5;
+        // }
+
+        // &[v-cloak] {
+        //   min-height: var(--v-cloak-height);
+
+
+        //   animation: a-flash 2s infinite ease-out;
+        //   background-image: linear-gradient(90deg, rgb(255, 255, 255), rgb(221, 221, 221));
+        //   background-size: 100% 100%;
+
+        //   // animation-name: a-flash;
+        //   // animation-duration: 1500ms;
+        //   // animation-timing-function: linear;
+        //   // animation-iteration-count: infinite;
+        // }
+
+        // &[v-cloak] > * {
+        //   opacity: 0;
+        //   transition: 500ms;
+        // }
+        // &:not([v-cloak]) > * {
+        //   opacity: 1;
+        //   transition: 500ms;
+        //   // animation-name: fadein-up;
+        //   // animation-fill-mode: forwards;
+        //   // animation-duration: 500ms;
+        // }
+
+    }
+
+    &__main {
+        width: 100%;
+
+        display: inline-flex;
+        flex-direction: column;
+
+        // margin-top: 1.5rem;
+        @media screen and (min-width: 992px) {
+            max-width: var(--w-main);
+
+            // margin-top: 0;
+        }
+
+        &-pagination {
+            margin-top: 2.5rem;
+        }
+
+        &-top-interface {
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 5;
+        }
+    }
+
+    &__full {
+        width: 100%;
+    }
+
+
+
+    &._p-no-1 {
+        padding: 0.88rem 1.25rem;
+
+        @media screen and (min-width: $lg) {
+            padding: 1.5rem;
+        }
+    }
+
+    &._mt-no-1 {
+        margin-top: 1.88rem;
+
+        @media screen and (min-width: $lg) {
+            margin-top: unset;
+        }
+    }
+
+    &._mt-no-2 {
+        margin-top: 1.13rem;
+
+        @media screen and (min-width: $lg) {
+            margin-top: 2.38rem;
+        }
+    }
+
+    &._mt-no-3 {
+        margin-top: 0.75rem;
+
+        @media screen and (min-width: $lg) {
+            margin-top: 1.25rem;
+        }
+    }
+
+    // Или в шаблоне использовать классы
+    // mt-0-25_to-lg mt-1-25_lg
+    &._mt-no-4 {
+        margin-top: 0.25rem;
+
+        @media screen and (min-width: $lg) {
+            margin-top: 1.25rem;
+        }
+    }
+
+
+
+}
