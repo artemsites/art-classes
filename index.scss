@@ -9,6 +9,7 @@
 
 
 @import 'box';
+@import 'block';
 
 @import 'bg';
 @import 'color';
@@ -16,12 +17,15 @@
 @import 'width-height';
 @import 'flex';
 @import 'gap';
+@import 'line-height';
 @import 'text-transform';
 @import 'text-align';
+@import 'font-weight';
 @import 'margin';
 @import 'margin-top';
 @import 'border-radius';
 @import 'position';
+@import 'column';
 
 @for $i from -1 through 10 {
   .fs#{$i+1} {

@@ -1,0 +1,10 @@
+.column {
+    &-2 {
+        column-count: 2;
+        &-lg {
+            @media screen and (min-width: $lg) {
+                column-count: 2;
+            }
+        }
+    }
+}
