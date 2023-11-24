@@ -189,6 +189,12 @@
     &._p-no-2 {
         padding: 1.25rem 1.5rem 1.5rem;
     }
+    &._p-no-3 {
+        padding: 1.25rem;
+        @media screen and (min-width: $md) {
+            padding: 1rem 1rem 1.5rem 1.25rem;
+        }
+    }
 
     &._mt-no-1 {
         margin-top: 1.88rem;
