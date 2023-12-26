@@ -1,49 +1,171 @@
 .d-f {
   display: flex;
+
+  &-i {
+      display: flex !important;
+  }
 }
 
 .d-if {
   display: inline-flex;
+
+  &-i {
+      display: inline-flex !important;
+  }
 }
 
 .d-b {
   display: block;
+
+  &-i {
+      display: block !important;
+  }
 }
 
 .d-n {
   display: none;
+
+  &-i {
+      display: none !important;
+  }
 }
 
-.d-n-i {
-  display: none!important;
+@media screen and (min-width: $sm) {
+  .d-f-sm {
+      display: flex;
+
+      &-i {
+          display: flex !important;
+      }
+  }
+
+  .d-if-sm {
+      display: inline-flex;
+
+      &-i {
+          display: inline-flex !important;
+      }
+  }
+
+  .d-b-sm {
+      display: block;
+
+      &-i {
+          display: block !important;
+      }
+  }
+
+  .d-n-sm {
+      display: none;
+
+      &-i {
+          display: none !important;
+      }
+  }
+
 }
 
 @media screen and (min-width: $md) {
-  .md_d-n,
-  .d-n-md {
-    display: none;
-  }
-  .md_d-if,
-  .d-if-md {
-    display: inline-flex;
-  }
-  .md_d-f,
   .d-f-md {
-    display: flex;
+      display: flex;
+
+      &-i {
+          display: flex !important;
+      }
   }
+
+  .d-if-md {
+      display: inline-flex;
+
+      &-i {
+          display: inline-flex !important;
+      }
+  }
+
+  .d-b-md {
+      display: block;
+
+      &-i {
+          display: block !important;
+      }
+  }
+
+  .d-n-md {
+      display: none;
+
+      &-i {
+          display: none !important;
+      }
+  }
+
 }
 
 @media screen and (min-width: $lg) {
-  .lg_d-n,
-  .d-n-lg {
-    display: none;
-  }
-  .lg_d-if,
-  .d-if-lg {
-    display: inline-flex;
-  }
-  .lg_d-f,
   .d-f-lg {
-    display: flex;
+      display: flex;
+
+      &-i {
+          display: flex !important;
+      }
   }
+
+  .d-if-lg {
+      display: inline-flex;
+
+      &-i {
+          display: inline-flex !important;
+      }
+  }
+
+  .d-b-lg {
+      display: block;
+
+      &-i {
+          display: block !important;
+      }
+  }
+
+  .d-n-lg {
+      display: none;
+
+      &-i {
+          display: none !important;
+      }
+  }
+
+}
+
+@media screen and (min-width: $xl) {
+  .d-f-xl {
+      display: flex;
+
+      &-i {
+          display: flex !important;
+      }
+  }
+
+  .d-if-xl {
+      display: inline-flex;
+
+      &-i {
+          display: inline-flex !important;
+      }
+  }
+
+  .d-b-xl {
+      display: block;
+
+      &-i {
+          display: block !important;
+      }
+  }
+
+  .d-n-xl {
+      display: none;
+
+      &-i {
+          display: none !important;
+      }
+  }
+
 }

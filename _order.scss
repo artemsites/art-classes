@@ -1,0 +1,21 @@
+$val: 0;
+@while $val <= 100 {
+    .order-#{$val} {
+        order: #{$val};
+    }
+
+    $val: $val + 10;
+}
+
+
+
+$val: 0;
+@while $val <= 100 {
+    .order-#{$val}-lg {
+        @media screen and (min-width: $lg) {
+            order: #{$val};
+        }
+    }
+
+    $val: $val + 10;
+}

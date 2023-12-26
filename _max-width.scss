@@ -1,0 +1,8 @@
+$val: 0;
+@while $val <= 50 {
+    .max-w-#{$val} {
+        max-width: #{$val}rem;
+    }
+
+    $val: $val + 1;
+}
