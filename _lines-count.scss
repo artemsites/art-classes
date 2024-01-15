@@ -1,0 +1,37 @@
+.lines-count {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    overflow: hidden;
+
+    &._n1 {
+        -webkit-line-clamp: 1;
+    }
+    &._n2 {
+        -webkit-line-clamp: 2;
+    }
+    &._n3 {
+        -webkit-line-clamp: 3;
+    }
+    &._n4 {
+        -webkit-line-clamp: 4;
+    }
+    &._n5 {
+        -webkit-line-clamp: 5;
+    }
+    &._n6 {
+        -webkit-line-clamp: 6;
+    }
+    &._n7 {
+        -webkit-line-clamp: 7;
+    }
+    &._n8 {
+        -webkit-line-clamp: 8;
+    }
+    &._n9 {
+        -webkit-line-clamp: 9;
+    }
+    &._n10 {
+        -webkit-line-clamp: 10;
+    }
+}
