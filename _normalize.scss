@@ -1,0 +1,54 @@
+/**
+ * @title normalize
+ * @author artemsites.ru
+ * @version 1.4 | 15.01.2024
+ */
+
+body {
+    min-height: 100vh;
+
+    line-height: 1;
+    hyphens: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+input,
+button,
+[type=submit] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+button,
+[type=submit] {
+    cursor: pointer;
+    user-select: none;
+}
+
+input {
+    &::placeholder {
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+video {
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    /* для предотвращения мелькания при загрузке на некоторых версиях ios */
+}
