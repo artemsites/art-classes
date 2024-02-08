@@ -4,4 +4,9 @@
 
 .tt-c {
   text-transform: capitalize;
+  &-fl {
+      &:first-letter {
+          text-transform: uppercase;
+      }
+  }
 }
