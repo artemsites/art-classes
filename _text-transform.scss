@@ -1,12 +1,17 @@
 .tt-u {
   text-transform: uppercase;
+  &-fl {
+      &:first-letter {
+          text-transform: uppercase;
+      }
+  }
 }
 
 .tt-c {
   text-transform: capitalize;
   &-fl {
       &:first-letter {
-          text-transform: uppercase;
+          text-transform: capitalize;
       }
   }
 }
