@@ -4,26 +4,31 @@
 
     display: flex;
 
+    &-row,
     &._row {
         flex-direction: row;
     }
 
+    &-col,
     &._col {
         flex-direction: column;
     }
 
+    &-row_sm,
     &._row-sm {
         @media screen and (min-width: $sm) {
             flex-direction: row;
         }
     }
 
+    &-col_sm,
     &._col-sm {
         @media screen and (min-width: $sm) {
             flex-direction: column;
         }
     }
 
+    &-row_md,
     &._row-md {
         @media screen and (min-width: $md) {
             flex-direction: row;

@@ -63,6 +63,10 @@ $gray-5: color.scale($gray-4, $lightness: $gr-s);
 
 $m-c-w: $size-9;
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   font-size: 3.125vw;
 

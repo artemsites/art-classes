@@ -1,6 +1,30 @@
 // width
 .w-full {
     width: 100%;
+    @media screen and (min-width: $sm) {
+        &_sm {
+            width: 100%;
+        }
+    }
+    @media screen and (min-width: $md) {
+        &_md {
+            width: 100%;
+        }
+    }
+}
+
+.w-half {
+    width: 50%;
+    @media screen and (min-width: $sm) {
+        &_sm {
+            width: 50%;
+        }
+    }
+    @media screen and (min-width: $md) {
+        &_md {
+            width: 50%;
+        }
+    }
 }
 
 .w-gr-s {
