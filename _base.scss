@@ -68,12 +68,6 @@ html {
 }
 
 :root {
-  font-size: 3.125vw;
-
-  @media screen and (min-width: 576px) {
-    font-size: 18px;
-  }
-
   --xs: 0;
   --sm: 576px;
   --md: 768px;
@@ -135,6 +129,12 @@ html {
   --c-p: var(--size);
   // container width
   --c-w: calc(100vw - var(--size) * 2);
+  
+  font-size: 3.125vw;
+
+  @media screen and (min-width: 576px) {
+    font-size: 18px;
+  }
 
   @media screen and (min-width: 768px) {
     --c-p: var(--size-1);
